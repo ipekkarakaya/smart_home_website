@@ -3,7 +3,6 @@ $(document).ready(function(){
     var doamain = "http://raspberrypi:8080/"
 
     $("#ledON").click(function(){
-    //    alert("wurde geklickt!")
        $.ajax({
             url: doamain+"Led/on",
             async: true,
@@ -18,4 +17,20 @@ $(document).ready(function(){
        });
 
     });
+
+    $("#ledOFF").click(function(){
+        $.ajax({
+             url: doamain+"Led/off",
+             async: true,
+             dataType: "html or json",
+             success: function(data, status){
+                 alert("functioniert")
+             },
+             error: function(xhr, status, error){
+                 alert("functioniert nicht")
+             },
+             type: "post"
+        });
+ 
+     });
 });
