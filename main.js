@@ -6,7 +6,7 @@ $(document).ready(function(){
        $.ajax({
             url: doamain+"Led/on",
             async: true,
-            dataType: "html or json",
+            dataType: "text",
             success: function(data, status){
                 alert("functioniert")
             },
@@ -22,7 +22,7 @@ $(document).ready(function(){
         $.ajax({
              url: doamain+"Led/off",
              async: true,
-             dataType: "html or json",
+             dataType: "text",
              success: function(data, status){
                  alert("functioniert")
              },
