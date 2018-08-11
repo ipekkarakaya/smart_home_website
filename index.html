@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="main.js"></script>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"></script>
 </head>
 <body>
     <h2>Smart Home</h2>
 
     <p>Licht:</p>
-    <button class="ledButton" id="ledON">An</button>
-    <button class="ledButton" id="ledOFF">Aus</button>
+    <button type="button" class="btn btn-outline-success btn-lg" id="led_on">An</button>
+    <button type="button" class="btn btn-outline-danger ledButton btn-lg"  id="led_off">Aus</button>
 
     <p>Alarm:</p>
-    <button class="alarmButton" id="alarmON" onclick="test">aktiviert</button>
-    <button class="alarmButton" id="alarmOFF">deaktiviert</button>
-    <button class="alarmButton" id="alarmSLEEPING" >Ruhemodus</button>
+    <button type="button" class="btn btn-outline-success alarmButton btn-lg" id="alarm_on">aktiviert</button>
+    <button type="button" class="btn btn-outline-danger alarmButton btn-lg" id="alarm_off">deaktiviert</button>
+    <button type="button" class="btn btn-outline-info alarmButton btn-lg" id="alarm_sleeping" >Ruhemodus</button>
 
 </body>
 </html>
