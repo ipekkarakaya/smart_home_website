@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
-    var doamain = "http://192.168.178.61:8080/"
+    var doamain = "http://raspberrypi:8080/"
 
     $("#ledON").click(function(){
+       alert("wurde geklickt!")
        $.ajax({
             url: doamain+"Led/on",
             async: true,
