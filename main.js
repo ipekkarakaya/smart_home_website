@@ -3,7 +3,7 @@ $(document).ready(function(){
     var doamain = "http://raspberrypi:8080/"
 
     $("#ledON").click(function(){
-       alert("wurde geklickt!")
+    //    alert("wurde geklickt!")
        $.ajax({
             url: doamain+"Led/on",
             async: true,
