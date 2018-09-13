@@ -2,11 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
     <h2>Smart Home</h2>
@@ -14,11 +13,14 @@
     <p>Licht:</p>
     <button type="button" class="btn btn-outline-success btn-lg" id="led_on">An</button>
     <button type="button" class="btn btn-outline-danger ledButton btn-lg"  id="led_off">Aus</button>
-
+    <br>
     <p>Alarm:</p>
     <button type="button" class="btn btn-outline-success alarmButton btn-lg" id="alarm_on">aktiviert</button>
     <button type="button" class="btn btn-outline-danger alarmButton btn-lg" id="alarm_off">deaktiviert</button>
     <button type="button" class="btn btn-outline-info alarmButton btn-lg" id="alarm_sleeping" >Ruhemodus</button>
 
+    <p>Temperatur:</p>
+    <br>
+    <h2 class="d-inline p-3 bg-info text-white font-weight-bold" id="temperature_display">-1 *C</h2> <button type="button" class="btn btn-outline-warning btn-lg" id="update_temperature" >Temperatur </button>
 </body>
 </html>

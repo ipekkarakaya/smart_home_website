@@ -64,6 +64,20 @@ $(document).ready(function(){
              },
              type: "post"
         });
- 
+     });
+
+     $("#update_temperature").click(function(){
+        $.ajax({
+             url: doamain+"temperature",
+             async: false,
+             dataType: "text",
+             error: function(xhr, status, error){
+                alert("Server ist nicht erreichbar")
+             },
+             success: function(response){
+                $("#temperature_display").text(response);
+             },
+             type: "get"
+        });
      });
 });
